@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B0758889-78C3-9F0B-6809-1AA3462F57A1" name="SIM_dept">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-02-17 17:11:14 UTC</createdTime>
+<generatorID>B2E7C834-D959-271A-C74C-69F5D5326F08</generatorID>
+<ownerDesignName>sim</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="dept_id" id="D2CE8ABA-1BA3-5690-F2CB-3DC09629C0CF">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-02-17 17:11:14 UTC</createdTime>
+<generatorID>CCCA5AEF-F464-9742-EAC1-54A4639518B3</generatorID>
+<ownerDesignName>sim</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="47D0B0D4-4F21-F0EA-5DE9-64724120FAAA">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-02-17 17:11:14 UTC</createdTime>
+<generatorID>4D1D9249-3652-33D3-C06B-2599BF496643</generatorID>
+<ownerDesignName>sim</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="location" id="573F6A71-8B4C-584B-1D8E-9797091E1763">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-02-17 17:11:14 UTC</createdTime>
+<generatorID>8C28F1D9-AE70-02D2-5B99-7201850A48EC</generatorID>
+<ownerDesignName>sim</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SIM_Person_person_id" id="19237878-6844-414A-2CFA-54877FF32BCE">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-02-17 17:11:14 UTC</createdTime>
+<generatorID>870C99DB-0A7D-7A81-1C10-DD649A5BCFB6</generatorID>
+<ownerDesignName>sim</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>59D574C8-A803-98EE-D6E7-B6506CBC3E9A</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6336A055-256A-F915-4617-644C5999F65F" referredColumn="59D574C8-A803-98EE-D6E7-B6506CBC3E9A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CADD8ED4-CC7A-B020-0F5B-9551D2C8623C" name="SIM_dept_PK">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-02-17 17:11:14 UTC</createdTime>
+<generatorID>772F201E-2418-C51B-E414-8D3E2E0D312D</generatorID>
+<ownerDesignName>sim</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D2CE8ABA-1BA3-5690-F2CB-3DC09629C0CF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CE06D70B-5678-0417-CFCC-670C52E2F2D4" name="SIM_dept__IDX">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-02-17 17:11:14 UTC</createdTime>
+<ownerDesignName>sim</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>A1A77632-6A0B-118C-66A4-2AE1C9ED6EDE</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="19237878-6844-414A-2CFA-54877FF32BCE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="34276434-B025-5D48-2C40-B1B71591B0B4" name="SIM_dept_SIM_Person_FK">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-02-17 17:11:14 UTC</createdTime>
+<generatorID>A1A77632-6A0B-118C-66A4-2AE1C9ED6EDE</generatorID>
+<ownerDesignName>sim</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="19237878-6844-414A-2CFA-54877FF32BCE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

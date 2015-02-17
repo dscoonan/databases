@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="75DD04AF-02FB-4D7A-E483-332650809B75" name="SIM_p2p">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-02-17 03:43:32 UTC</createdTime>
+<ownerDesignName>sim</ownerDesignName>
+<engineerTo>
+<item key="71D4D147-B0B4-066E-61E7-32C75BD319C6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="per_proj" id="E9D9779B-826E-C83D-1DB0-F4AE9B075B18">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-02-17 03:43:41 UTC</createdTime>
+<ownerDesignName>sim</ownerDesignName>
+<engineerTo>
+<item key="71D4D147-B0B4-066E-61E7-32C75BD319C6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="person_id" id="C20DBAB7-0204-E57F-0F75-8A8C031A3955">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-02-17 03:45:36 UTC</createdTime>
+<generatorID>D9C2750C-4E27-A77A-91DD-8DFFAFCF2D28</generatorID>
+<ownerDesignName>sim</ownerDesignName>
+<engineerTo>
+<item key="71D4D147-B0B4-066E-61E7-32C75BD319C6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>EE55E073-2779-59B4-9EA8-23B300AF15B8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="project_id" id="BB3F1985-F6D0-D044-4D16-332A8517A779">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-02-17 03:47:13 UTC</createdTime>
+<generatorID>0D3B5C5B-8F5E-06C8-46E6-87EB21FB3D53</generatorID>
+<ownerDesignName>sim</ownerDesignName>
+<engineerTo>
+<item key="71D4D147-B0B4-066E-61E7-32C75BD319C6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>2856200F-DFDD-FDA6-1A86-03334CDA1CAC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="181256BB-BABC-3FEF-9330-D2021BBF1422" name="{entity} PK">
+<createdBy>Nicholas</createdBy>
+<createdTime>2015-02-17 03:43:53 UTC</createdTime>
+<ownerDesignName>sim</ownerDesignName>
+<engineerTo>
+<item key="71D4D147-B0B4-066E-61E7-32C75BD319C6" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E9D9779B-826E-C83D-1DB0-F4AE9B075B18</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
