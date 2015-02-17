@@ -26,7 +26,7 @@ BEGIN
         STATUS,
         TITLE,
         BONUS,
-        DEPT_ID)
+        SIM_DEPT_DEPT_ID)
      VALUES (
         :new.PERSON_ID,
         'Manager',
@@ -43,7 +43,7 @@ BEGIN
         :new.STATUS,
         :new.TITLE,
         :new.BONUS,
-        :new.DEPT_ID) ;
+        :new.SIM_DEPT_DEPT_ID) ;
 END;
 /
 
@@ -72,7 +72,7 @@ BEGIN
         STATUS,
         TITLE,
         RATING,
-        DEPT_ID1)
+        SIM_DEPT_DEPT_ID1)
      VALUES (
         :new.PERSON_ID,
         'Project Employee',
@@ -89,6 +89,6 @@ BEGIN
         :new.STATUS,
         :new.TITLE,
         :new.RATING,
-        :new.DEPT_ID1) ;
+        :new.SIM_DEPT_DEPT_ID1) ;
 END;
 /
