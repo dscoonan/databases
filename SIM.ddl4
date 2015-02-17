@@ -48,7 +48,7 @@ END;
 /
 
 create view sim_project_emp as
-SELECT PERSON_ID, TYPE, NAME, SSNUM, GENDER, BIRTH_DATE, ADDRESS, CITY, STATE, ZIP, HIRE_DATE, SALARY, STATUS, TITLE, RATING, DEPT_ID
+SELECT PERSON_ID, TYPE, NAME, SSNUM, GENDER, BIRTH_DATE, ADDRESS, CITY, STATE, ZIP, HIRE_DATE, SALARY, STATUS, TITLE, RATING, DEPT_ID1
 FROM SIM_PERSON
 WHERE TYPE = 'Project Employee' ;
 
@@ -72,7 +72,7 @@ BEGIN
         STATUS,
         TITLE,
         RATING,
-        DEPT_ID)
+        DEPT_ID1)
      VALUES (
         :new.PERSON_ID,
         'Project Employee',
@@ -89,6 +89,6 @@ BEGIN
         :new.STATUS,
         :new.TITLE,
         :new.RATING,
-        :new.DEPT_ID) ;
+        :new.DEPT_ID1) ;
 END;
 /
