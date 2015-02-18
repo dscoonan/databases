@@ -27,7 +27,7 @@ prompt APPLICATION 10069 - HW4
 -- Application Export:
 --   Application:     10069
 --   Name:            HW4
---   Date and Time:   02:30 Wednesday February 18, 2015
+--   Date and Time:   02:42 Wednesday February 18, 2015
 --   Exported By:     NICHOLAS.MORELES@UTEXAS.EDU
 --   Flashback:       0
 --   Export Type:     Application Export
@@ -107,7 +107,7 @@ wwv_flow_api.create_flow(
 ,p_rejoin_existing_sessions=>'N'
 ,p_csv_encoding=>'Y'
 ,p_last_updated_by=>'NICHOLAS.MORELES@UTEXAS.EDU'
-,p_last_upd_yyyymmddhh24miss=>'20150218022548'
+,p_last_upd_yyyymmddhh24miss=>'20150218024141'
 ,p_ui_type_name => null
 );
 end;
@@ -7465,7 +7465,7 @@ wwv_flow_api.create_page(
 ,p_cache_mode=>'NOCACHE'
 ,p_help_text=>'No help is available for this page.'
 ,p_last_updated_by=>'NICHOLAS.MORELES@UTEXAS.EDU'
-,p_last_upd_yyyymmddhh24miss=>'20150218022548'
+,p_last_upd_yyyymmddhh24miss=>'20150218023853'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(589984789671910578)
@@ -7528,12 +7528,16 @@ wwv_flow_api.create_worksheet(
 ,p_max_row_count=>'1000000'
 ,p_max_row_count_message=>'The maximum row count for this report is #MAX_ROW_COUNT# rows.  Please apply a filter to reduce the number of records in your query.'
 ,p_no_data_found_message=>'No data found.'
+,p_allow_report_categories=>'N'
 ,p_show_nulls_as=>'-'
 ,p_pagination_type=>'ROWS_X_TO_Y'
 ,p_pagination_display_pos=>'BOTTOM_RIGHT'
 ,p_report_list_mode=>'TABS'
 ,p_show_detail_link=>'N'
+,p_show_calendar=>'N'
 ,p_download_formats=>'CSV:HTML:EMAIL:XLS:PDF:RTF'
+,p_detail_link_text=>'<img src="#IMAGE_PREFIX#menu/pencil16x16.gif" alt="" />'
+,p_icon_view_columns_per_row=>1
 ,p_owner=>'NICHOLAS.MORELES@UTEXAS.EDU'
 ,p_internal_uid=>589987476963913990
 );
@@ -7544,6 +7548,7 @@ wwv_flow_api.create_worksheet_column(
 ,p_column_identifier=>'A'
 ,p_column_label=>'Person Id'
 ,p_column_type=>'NUMBER'
+,p_display_text_as=>'HIDDEN'
 ,p_column_alignment=>'RIGHT'
 ,p_tz_dependent=>'N'
 );
@@ -7693,6 +7698,7 @@ wwv_flow_api.create_worksheet_column(
 ,p_column_identifier=>'Q'
 ,p_column_label=>'Sim Dept Dept Id'
 ,p_column_type=>'NUMBER'
+,p_display_text_as=>'HIDDEN'
 ,p_column_alignment=>'RIGHT'
 ,p_tz_dependent=>'N'
 );
@@ -7703,6 +7709,7 @@ wwv_flow_api.create_worksheet_column(
 ,p_column_identifier=>'R'
 ,p_column_label=>'Sim Dept Dept Id1'
 ,p_column_type=>'NUMBER'
+,p_display_text_as=>'HIDDEN'
 ,p_column_alignment=>'RIGHT'
 ,p_tz_dependent=>'N'
 );
@@ -7713,6 +7720,7 @@ wwv_flow_api.create_worksheet_column(
 ,p_column_identifier=>'S'
 ,p_column_label=>'Created'
 ,p_column_type=>'DATE'
+,p_display_text_as=>'HIDDEN'
 ,p_tz_dependent=>'N'
 );
 wwv_flow_api.create_worksheet_column(
@@ -7722,6 +7730,7 @@ wwv_flow_api.create_worksheet_column(
 ,p_column_identifier=>'T'
 ,p_column_label=>'Created By'
 ,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN'
 ,p_tz_dependent=>'N'
 );
 wwv_flow_api.create_worksheet_column(
@@ -7731,6 +7740,7 @@ wwv_flow_api.create_worksheet_column(
 ,p_column_identifier=>'U'
 ,p_column_label=>'Row Version Number'
 ,p_column_type=>'NUMBER'
+,p_display_text_as=>'HIDDEN'
 ,p_column_alignment=>'RIGHT'
 ,p_tz_dependent=>'N'
 );
@@ -7741,6 +7751,7 @@ wwv_flow_api.create_worksheet_column(
 ,p_column_identifier=>'V'
 ,p_column_label=>'Updated'
 ,p_column_type=>'DATE'
+,p_display_text_as=>'HIDDEN'
 ,p_tz_dependent=>'N'
 );
 wwv_flow_api.create_worksheet_column(
@@ -7750,6 +7761,7 @@ wwv_flow_api.create_worksheet_column(
 ,p_column_identifier=>'W'
 ,p_column_label=>'Updated By'
 ,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN'
 ,p_tz_dependent=>'N'
 );
 wwv_flow_api.create_worksheet_column(
@@ -7791,7 +7803,7 @@ wwv_flow_api.create_page(
 ,p_cache_mode=>'NOCACHE'
 ,p_help_text=>'No help is available for this page.'
 ,p_last_updated_by=>'NICHOLAS.MORELES@UTEXAS.EDU'
-,p_last_upd_yyyymmddhh24miss=>'20150218021930'
+,p_last_upd_yyyymmddhh24miss=>'20150218023941'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(590019986652929682)
@@ -7847,14 +7859,17 @@ wwv_flow_api.create_worksheet(
 ,p_max_row_count=>'1000000'
 ,p_max_row_count_message=>'The maximum row count for this report is #MAX_ROW_COUNT# rows.  Please apply a filter to reduce the number of records in your query.'
 ,p_no_data_found_message=>'No data found.'
+,p_allow_report_categories=>'N'
 ,p_show_nulls_as=>'-'
 ,p_pagination_type=>'ROWS_X_TO_Y'
 ,p_pagination_display_pos=>'BOTTOM_RIGHT'
 ,p_report_list_mode=>'TABS'
 ,p_show_detail_link=>'C'
+,p_show_calendar=>'N'
 ,p_download_formats=>'CSV:HTML:EMAIL:XLS:PDF:RTF'
-,p_detail_link=>'f?p=&APP_ID.:5:&APP_SESSION.::::P5_PERSON_ID:#PERSON_ID#'
+,p_detail_link=>'f?p=&APP_ID.:5:&SESSION.::&DEBUG.::P5_PERSON_ID:#PERSON_ID#'
 ,p_detail_link_text=>'<img src="#IMAGE_PREFIX#e2.gif"  border="0">'
+,p_icon_view_columns_per_row=>1
 ,p_owner=>'NICHOLAS.MORELES@UTEXAS.EDU'
 ,p_internal_uid=>604429020363303290
 );
@@ -7865,6 +7880,7 @@ wwv_flow_api.create_worksheet_column(
 ,p_column_identifier=>'A'
 ,p_column_label=>'Person Id'
 ,p_column_type=>'NUMBER'
+,p_display_text_as=>'HIDDEN'
 ,p_tz_dependent=>'N'
 );
 wwv_flow_api.create_worksheet_column(
@@ -7874,6 +7890,7 @@ wwv_flow_api.create_worksheet_column(
 ,p_column_identifier=>'B'
 ,p_column_label=>'Type'
 ,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN'
 ,p_tz_dependent=>'N'
 );
 wwv_flow_api.create_worksheet_column(
@@ -8000,6 +8017,7 @@ wwv_flow_api.create_worksheet_column(
 ,p_column_identifier=>'P'
 ,p_column_label=>'Sim Dept Dept Id'
 ,p_column_type=>'NUMBER'
+,p_display_text_as=>'HIDDEN'
 ,p_tz_dependent=>'N'
 );
 wwv_flow_api.create_worksheet_column(
@@ -8569,7 +8587,7 @@ wwv_flow_api.create_page(
 ,p_cache_mode=>'NOCACHE'
 ,p_help_text=>'No help is available for this page.'
 ,p_last_updated_by=>'NICHOLAS.MORELES@UTEXAS.EDU'
-,p_last_upd_yyyymmddhh24miss=>'20150218022207'
+,p_last_upd_yyyymmddhh24miss=>'20150218024007'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(604505526567297684)
@@ -8625,14 +8643,17 @@ wwv_flow_api.create_worksheet(
 ,p_max_row_count=>'1000000'
 ,p_max_row_count_message=>'The maximum row count for this report is #MAX_ROW_COUNT# rows.  Please apply a filter to reduce the number of records in your query.'
 ,p_no_data_found_message=>'No data found.'
+,p_allow_report_categories=>'N'
 ,p_show_nulls_as=>'-'
 ,p_pagination_type=>'ROWS_X_TO_Y'
 ,p_pagination_display_pos=>'BOTTOM_RIGHT'
 ,p_report_list_mode=>'TABS'
 ,p_show_detail_link=>'C'
+,p_show_calendar=>'N'
 ,p_download_formats=>'CSV:HTML:EMAIL:XLS:PDF:RTF'
-,p_detail_link=>'f?p=&APP_ID.:7:&APP_SESSION.::::P7_PERSON_ID:#PERSON_ID#'
+,p_detail_link=>'f?p=&APP_ID.:7:&SESSION.::&DEBUG.::P7_PERSON_ID:#PERSON_ID#'
 ,p_detail_link_text=>'<img src="#IMAGE_PREFIX#e2.gif"  border="0">'
+,p_icon_view_columns_per_row=>1
 ,p_owner=>'NICHOLAS.MORELES@UTEXAS.EDU'
 ,p_internal_uid=>604546327751304441
 );
@@ -8643,6 +8664,7 @@ wwv_flow_api.create_worksheet_column(
 ,p_column_identifier=>'A'
 ,p_column_label=>'Person Id'
 ,p_column_type=>'NUMBER'
+,p_display_text_as=>'HIDDEN'
 ,p_tz_dependent=>'N'
 );
 wwv_flow_api.create_worksheet_column(
@@ -8652,6 +8674,7 @@ wwv_flow_api.create_worksheet_column(
 ,p_column_identifier=>'B'
 ,p_column_label=>'Type'
 ,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN'
 ,p_tz_dependent=>'N'
 );
 wwv_flow_api.create_worksheet_column(
@@ -8778,6 +8801,7 @@ wwv_flow_api.create_worksheet_column(
 ,p_column_identifier=>'P'
 ,p_column_label=>'Sim Dept Dept Id1'
 ,p_column_type=>'NUMBER'
+,p_display_text_as=>'HIDDEN'
 ,p_tz_dependent=>'N'
 );
 wwv_flow_api.create_worksheet_column(
@@ -9350,7 +9374,7 @@ wwv_flow_api.create_page(
 ,p_cache_mode=>'NOCACHE'
 ,p_help_text=>'No help is available for this page.'
 ,p_last_updated_by=>'NICHOLAS.MORELES@UTEXAS.EDU'
-,p_last_upd_yyyymmddhh24miss=>'20150218021506'
+,p_last_upd_yyyymmddhh24miss=>'20150218024059'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(604631549354336279)
@@ -9397,14 +9421,17 @@ wwv_flow_api.create_worksheet(
 ,p_max_row_count=>'1000000'
 ,p_max_row_count_message=>'The maximum row count for this report is #MAX_ROW_COUNT# rows.  Please apply a filter to reduce the number of records in your query.'
 ,p_no_data_found_message=>'No data found.'
+,p_allow_report_categories=>'N'
 ,p_show_nulls_as=>'-'
 ,p_pagination_type=>'ROWS_X_TO_Y'
 ,p_pagination_display_pos=>'BOTTOM_RIGHT'
 ,p_report_list_mode=>'TABS'
 ,p_show_detail_link=>'C'
+,p_show_calendar=>'N'
 ,p_download_formats=>'CSV:HTML:EMAIL:XLS:PDF:RTF'
-,p_detail_link=>'f?p=&APP_ID.:11:&APP_SESSION.::::P11_PROJECT_ID:#PROJECT_ID#'
+,p_detail_link=>'f?p=&APP_ID.:11:&SESSION.::&DEBUG.::P11_PROJECT_ID:#PROJECT_ID#'
 ,p_detail_link_text=>'<img src="#IMAGE_PREFIX#e2.gif"  border="0">'
+,p_icon_view_columns_per_row=>1
 ,p_owner=>'NICHOLAS.MORELES@UTEXAS.EDU'
 ,p_internal_uid=>604802785287344672
 );
@@ -9415,6 +9442,7 @@ wwv_flow_api.create_worksheet_column(
 ,p_column_identifier=>'A'
 ,p_column_label=>'Project Id'
 ,p_column_type=>'NUMBER'
+,p_display_text_as=>'HIDDEN'
 ,p_tz_dependent=>'N'
 );
 wwv_flow_api.create_worksheet_column(
@@ -9433,6 +9461,7 @@ wwv_flow_api.create_worksheet_column(
 ,p_column_identifier=>'C'
 ,p_column_label=>'Sim Dept Dept Id'
 ,p_column_type=>'NUMBER'
+,p_display_text_as=>'HIDDEN'
 ,p_tz_dependent=>'N'
 );
 wwv_flow_api.create_worksheet_column(
@@ -9442,6 +9471,7 @@ wwv_flow_api.create_worksheet_column(
 ,p_column_identifier=>'D'
 ,p_column_label=>'Created'
 ,p_column_type=>'DATE'
+,p_display_text_as=>'HIDDEN'
 ,p_tz_dependent=>'N'
 );
 wwv_flow_api.create_worksheet_column(
@@ -9451,6 +9481,7 @@ wwv_flow_api.create_worksheet_column(
 ,p_column_identifier=>'E'
 ,p_column_label=>'Created By'
 ,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN'
 ,p_tz_dependent=>'N'
 );
 wwv_flow_api.create_worksheet_column(
@@ -9460,6 +9491,7 @@ wwv_flow_api.create_worksheet_column(
 ,p_column_identifier=>'F'
 ,p_column_label=>'Row Version Number'
 ,p_column_type=>'NUMBER'
+,p_display_text_as=>'HIDDEN'
 ,p_tz_dependent=>'N'
 );
 wwv_flow_api.create_worksheet_column(
@@ -9469,6 +9501,7 @@ wwv_flow_api.create_worksheet_column(
 ,p_column_identifier=>'G'
 ,p_column_label=>'Updated'
 ,p_column_type=>'DATE'
+,p_display_text_as=>'HIDDEN'
 ,p_tz_dependent=>'N'
 );
 wwv_flow_api.create_worksheet_column(
@@ -9478,6 +9511,7 @@ wwv_flow_api.create_worksheet_column(
 ,p_column_identifier=>'H'
 ,p_column_label=>'Updated By'
 ,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN'
 ,p_tz_dependent=>'N'
 );
 wwv_flow_api.create_worksheet_column(
@@ -9572,7 +9606,7 @@ wwv_flow_api.create_page(
 ,p_cache_mode=>'NOCACHE'
 ,p_help_text=>'No help is available for this page.'
 ,p_last_updated_by=>'NICHOLAS.MORELES@UTEXAS.EDU'
-,p_last_upd_yyyymmddhh24miss=>'20150218021318'
+,p_last_upd_yyyymmddhh24miss=>'20150218024141'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(604685249080334656)
@@ -9621,14 +9655,17 @@ wwv_flow_api.create_worksheet(
 ,p_max_row_count=>'1000000'
 ,p_max_row_count_message=>'The maximum row count for this report is #MAX_ROW_COUNT# rows.  Please apply a filter to reduce the number of records in your query.'
 ,p_no_data_found_message=>'No data found.'
+,p_allow_report_categories=>'N'
 ,p_show_nulls_as=>'-'
 ,p_pagination_type=>'ROWS_X_TO_Y'
 ,p_pagination_display_pos=>'BOTTOM_RIGHT'
 ,p_report_list_mode=>'TABS'
 ,p_show_detail_link=>'C'
+,p_show_calendar=>'N'
 ,p_download_formats=>'CSV:HTML:EMAIL:XLS:PDF:RTF'
-,p_detail_link=>'f?p=&APP_ID.:12:&APP_SESSION.::::P12_DEPT_ID:#DEPT_ID#'
+,p_detail_link=>'f?p=&APP_ID.:12:&SESSION.::&DEBUG.::P12_DEPT_ID:#DEPT_ID#'
 ,p_detail_link_text=>'<img src="#IMAGE_PREFIX#e2.gif"  border="0">'
+,p_icon_view_columns_per_row=>1
 ,p_owner=>'NICHOLAS.MORELES@UTEXAS.EDU'
 ,p_internal_uid=>604882485852362352
 );
@@ -9639,6 +9676,7 @@ wwv_flow_api.create_worksheet_column(
 ,p_column_identifier=>'A'
 ,p_column_label=>'Dept Id'
 ,p_column_type=>'NUMBER'
+,p_display_text_as=>'HIDDEN'
 ,p_tz_dependent=>'N'
 );
 wwv_flow_api.create_worksheet_column(
@@ -9666,6 +9704,7 @@ wwv_flow_api.create_worksheet_column(
 ,p_column_identifier=>'D'
 ,p_column_label=>'Sim Person Person Id'
 ,p_column_type=>'NUMBER'
+,p_display_text_as=>'HIDDEN'
 ,p_tz_dependent=>'N'
 );
 wwv_flow_api.create_worksheet_column(
@@ -9675,6 +9714,7 @@ wwv_flow_api.create_worksheet_column(
 ,p_column_identifier=>'E'
 ,p_column_label=>'Created'
 ,p_column_type=>'DATE'
+,p_display_text_as=>'HIDDEN'
 ,p_tz_dependent=>'N'
 );
 wwv_flow_api.create_worksheet_column(
@@ -9684,6 +9724,7 @@ wwv_flow_api.create_worksheet_column(
 ,p_column_identifier=>'F'
 ,p_column_label=>'Created By'
 ,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN'
 ,p_tz_dependent=>'N'
 );
 wwv_flow_api.create_worksheet_column(
@@ -9693,6 +9734,7 @@ wwv_flow_api.create_worksheet_column(
 ,p_column_identifier=>'G'
 ,p_column_label=>'Row Version Number'
 ,p_column_type=>'NUMBER'
+,p_display_text_as=>'HIDDEN'
 ,p_tz_dependent=>'N'
 );
 wwv_flow_api.create_worksheet_column(
@@ -9702,6 +9744,7 @@ wwv_flow_api.create_worksheet_column(
 ,p_column_identifier=>'H'
 ,p_column_label=>'Updated'
 ,p_column_type=>'DATE'
+,p_display_text_as=>'HIDDEN'
 ,p_tz_dependent=>'N'
 );
 wwv_flow_api.create_worksheet_column(
@@ -9711,6 +9754,7 @@ wwv_flow_api.create_worksheet_column(
 ,p_column_identifier=>'I'
 ,p_column_label=>'Updated By'
 ,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN'
 ,p_tz_dependent=>'N'
 );
 wwv_flow_api.create_worksheet_column(
